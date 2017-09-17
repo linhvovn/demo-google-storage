@@ -1,0 +1,40 @@
+<html xmlns="http://thymeleaf.org">
+
+<head>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css"></link>
+    <link th:href="@{/css/layout.css}" rel="stylesheet" type="text/css"></link>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal" action="create">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Please Input value</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="username">Alphabetical</label>
+                    <div class="col-md-4">
+                        <input id="text" pattern="[A-Za-z]+" name="text" type="text" placeholder="Alphabetical" class="form-control input-md" required="true" />
+                    </div>
+                </div>
+
+                <!-- Password input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="password">Number</label>
+                    <div class="col-md-4">
+                        <input id="Number" name="number" type="number" placeholder="Number" class="form-control input-md" required="true" />
+                    </div>
+                </div>
+                <button class="btn btn-primary pull-right">Save</button>
+            </fieldset>
+        </form>
+
+        <script type="text/javascript" th:src="@{/js/jquery-3.1.0.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    </div>
+</body>
+
+</html>
